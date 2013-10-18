@@ -28,20 +28,32 @@
 
         ' This checks when a user types if they are entering a number or not, if they don't input a number a message box shows telling the user
         ' to type a number instead. This also cleans the "User Guess" textbox so that they can start again.
-        If IsNumeric(txtUserGuess.Text) Then
+        If Val(txtUserGuess.Text) <= 100 Then
+
+            If IsNumeric(txtUserGuess.Text) Then
 
 
-        ElseIf txtUserGuess.Text = "" Then
+            ElseIf txtUserGuess.Text.Contains(".") Then
 
+                MsgBox("'" & txtUserGuess.Text & "'" & " This is not a valid input please enter a numeric number")
+                txtUserGuess.Text = ""
 
-        Else
+            Else
 
-            MsgBox("Please enter a whole number!")
+                MsgBox("'" & txtUserGuess.Text & "'" & " This is not a valid input please enter a numberic number")
+                txtUserGuess.Text = ""
+
+            End If
+
+        ElseIf Val(txtUserGuess.Text) > 100 Then
+
+            MsgBox("Please enter a numeric number below 100")
             txtUserGuess.Text = ""
 
         End If
 
     End Sub
+
 
     Private Sub cmdRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRun.Click
 

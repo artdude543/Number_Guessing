@@ -32,13 +32,13 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtTries = New System.Windows.Forms.TextBox()
         Me.txtStatus = New System.Windows.Forms.TextBox()
-        Me.txtUserGuess = New System.Windows.Forms.TextBox()
         Me.txtAnswer = New System.Windows.Forms.TextBox()
         Me.cmdGiveUp = New System.Windows.Forms.Button()
         Me.cmdRun = New System.Windows.Forms.Button()
         Me.cmdReset = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtLastGuess = New System.Windows.Forms.TextBox()
+        Me.txtUserGuess = New System.Windows.Forms.TextBox()
         Me.mnMain.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -115,13 +115,6 @@ Partial Class Main
         Me.txtStatus.Size = New System.Drawing.Size(100, 20)
         Me.txtStatus.TabIndex = 3
         '
-        'txtUserGuess
-        '
-        Me.txtUserGuess.Location = New System.Drawing.Point(83, 60)
-        Me.txtUserGuess.Name = "txtUserGuess"
-        Me.txtUserGuess.Size = New System.Drawing.Size(100, 20)
-        Me.txtUserGuess.TabIndex = 1
-        '
         'txtAnswer
         '
         Me.txtAnswer.Location = New System.Drawing.Point(83, 138)
@@ -174,6 +167,13 @@ Partial Class Main
         Me.txtLastGuess.Size = New System.Drawing.Size(100, 20)
         Me.txtLastGuess.TabIndex = 2
         '
+        'txtUserGuess
+        '
+        Me.txtUserGuess.Location = New System.Drawing.Point(83, 60)
+        Me.txtUserGuess.Name = "txtUserGuess"
+        Me.txtUserGuess.Size = New System.Drawing.Size(100, 20)
+        Me.txtUserGuess.TabIndex = 1
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -214,12 +214,12 @@ Partial Class Main
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtTries As System.Windows.Forms.TextBox
     Friend WithEvents txtStatus As System.Windows.Forms.TextBox
-    Friend WithEvents txtUserGuess As System.Windows.Forms.TextBox
     Friend WithEvents txtAnswer As System.Windows.Forms.TextBox
     Friend WithEvents cmdGiveUp As System.Windows.Forms.Button
     Friend WithEvents cmdRun As System.Windows.Forms.Button
     Friend WithEvents cmdReset As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents txtLastGuess As System.Windows.Forms.TextBox
+    Friend WithEvents txtUserGuess As System.Windows.Forms.TextBox
 
 End Class
