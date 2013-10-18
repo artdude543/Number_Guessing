@@ -22,6 +22,7 @@ Partial Class Main
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Main))
         Me.lblGuess = New System.Windows.Forms.Label()
         Me.mnMain = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -62,13 +63,13 @@ Partial Class Main
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(35, 20)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(111, 22)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(103, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'Label1
@@ -104,7 +105,7 @@ Partial Class Main
         Me.txtTries.Name = "txtTries"
         Me.txtTries.ReadOnly = True
         Me.txtTries.Size = New System.Drawing.Size(49, 20)
-        Me.txtTries.TabIndex = 5
+        Me.txtTries.TabIndex = 8
         '
         'txtStatus
         '
@@ -112,14 +113,14 @@ Partial Class Main
         Me.txtStatus.Name = "txtStatus"
         Me.txtStatus.ReadOnly = True
         Me.txtStatus.Size = New System.Drawing.Size(100, 20)
-        Me.txtStatus.TabIndex = 6
+        Me.txtStatus.TabIndex = 3
         '
         'txtUserGuess
         '
         Me.txtUserGuess.Location = New System.Drawing.Point(83, 60)
         Me.txtUserGuess.Name = "txtUserGuess"
         Me.txtUserGuess.Size = New System.Drawing.Size(100, 20)
-        Me.txtUserGuess.TabIndex = 7
+        Me.txtUserGuess.TabIndex = 1
         '
         'txtAnswer
         '
@@ -127,14 +128,14 @@ Partial Class Main
         Me.txtAnswer.Name = "txtAnswer"
         Me.txtAnswer.ReadOnly = True
         Me.txtAnswer.Size = New System.Drawing.Size(100, 20)
-        Me.txtAnswer.TabIndex = 8
+        Me.txtAnswer.TabIndex = 4
         '
         'cmdGiveUp
         '
         Me.cmdGiveUp.Location = New System.Drawing.Point(244, 187)
         Me.cmdGiveUp.Name = "cmdGiveUp"
         Me.cmdGiveUp.Size = New System.Drawing.Size(75, 23)
-        Me.cmdGiveUp.TabIndex = 9
+        Me.cmdGiveUp.TabIndex = 6
         Me.cmdGiveUp.Text = "Give Up"
         Me.cmdGiveUp.UseVisualStyleBackColor = True
         '
@@ -143,7 +144,7 @@ Partial Class Main
         Me.cmdRun.Location = New System.Drawing.Point(163, 187)
         Me.cmdRun.Name = "cmdRun"
         Me.cmdRun.Size = New System.Drawing.Size(75, 23)
-        Me.cmdRun.TabIndex = 10
+        Me.cmdRun.TabIndex = 5
         Me.cmdRun.Text = "Guess"
         Me.cmdRun.UseVisualStyleBackColor = True
         '
@@ -152,7 +153,7 @@ Partial Class Main
         Me.cmdReset.Location = New System.Drawing.Point(2, 187)
         Me.cmdReset.Name = "cmdReset"
         Me.cmdReset.Size = New System.Drawing.Size(75, 23)
-        Me.cmdReset.TabIndex = 11
+        Me.cmdReset.TabIndex = 7
         Me.cmdReset.Text = "Reset"
         Me.cmdReset.UseVisualStyleBackColor = True
         '
@@ -171,7 +172,7 @@ Partial Class Main
         Me.txtLastGuess.Name = "txtLastGuess"
         Me.txtLastGuess.ReadOnly = True
         Me.txtLastGuess.Size = New System.Drawing.Size(100, 20)
-        Me.txtLastGuess.TabIndex = 13
+        Me.txtLastGuess.TabIndex = 2
         '
         'Main
         '
@@ -193,6 +194,7 @@ Partial Class Main
         Me.Controls.Add(Me.lblGuess)
         Me.Controls.Add(Me.mnMain)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.mnMain
         Me.Name = "Main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

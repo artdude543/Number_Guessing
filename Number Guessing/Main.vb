@@ -4,7 +4,6 @@
     Dim userGuesses As Integer
     Dim userCorrect As Boolean
 
-
     Friend Sub Main_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         txtStatus.BackColor = Color.Yellow
@@ -19,8 +18,6 @@
         txtUserGuess.Focus()
 
     End Sub
-
-    
 
     Private Sub cmdRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRun.Click
 
