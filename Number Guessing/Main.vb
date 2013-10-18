@@ -54,7 +54,6 @@
 
     End Sub
 
-
     Private Sub cmdRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRun.Click
 
         ' This checks if nothing has been entered into the "User Guess" textbox when the user clicks on the "Guess" button. If there is
