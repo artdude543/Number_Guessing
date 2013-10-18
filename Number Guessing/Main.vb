@@ -31,16 +31,13 @@
         If IsNumeric(txtUserGuess.Text) Then
 
 
-
         ElseIf txtUserGuess.Text = "" Then
-
 
 
         Else
 
             MsgBox("Please enter a whole number!")
             txtUserGuess.Text = ""
-
 
         End If
 
@@ -95,6 +92,9 @@
                 userCorrect = True
                 cmdReset.Enabled = True
                 txtUserGuess.Text = ""
+
+                txtUserGuess.ReadOnly = True
+                txtAnswer.Text = generatedNumber
 
             End If
 
