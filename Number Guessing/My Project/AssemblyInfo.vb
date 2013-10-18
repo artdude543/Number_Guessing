@@ -10,9 +10,9 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Number Guessing")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("York College")> 
+<Assembly: AssemblyCompany("DiamentiumUK")> 
 <Assembly: AssemblyProduct("Number Guessing")> 
-<Assembly: AssemblyCopyright("Copyright © York College 2013")> 
+<Assembly: AssemblyCopyright("Copyright © DiamentiumUK 2013")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
