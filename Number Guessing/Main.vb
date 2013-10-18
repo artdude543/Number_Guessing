@@ -19,6 +19,26 @@
 
     End Sub
 
+    Private Sub txtUserGuess_TextChanged(sender As Object, e As EventArgs) Handles txtUserGuess.TextChanged
+
+        If IsNumeric(txtUserGuess.Text) Then
+
+
+
+        ElseIf txtUserGuess.Text = "" Then
+
+
+
+        Else
+
+            MsgBox("Please enter a whole number!")
+            txtUserGuess.Text = ""
+
+
+        End If
+
+    End Sub
+
     Private Sub cmdRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cmdRun.Click
 
       
