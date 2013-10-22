@@ -33,14 +33,18 @@
             If IsNumeric(txtUserGuess.Text) Then
 
 
-            ElseIf txtUserGuess.Text.Contains(".") Then
+            ElseIf txtUserGuess.Text = "." Then
+
+                MsgBox("'" & txtUserGuess.Text & "'" & " This is not a valid input please enter a numeric number")
+                txtUserGuess.Text = ""
+
+            ElseIf Mid(txtUserGuess.Text, 1, 2) = "." Then
 
                 MsgBox("'" & txtUserGuess.Text & "'" & " This is not a valid input please enter a numeric number")
                 txtUserGuess.Text = ""
 
             Else
 
-                MsgBox("'" & txtUserGuess.Text & "'" & " This is not a valid input please enter a numberic number")
                 txtUserGuess.Text = ""
 
             End If
@@ -84,7 +88,6 @@
                 userCorrect = False
                 txtUserGuess.Text = ""
 
-
                 ' Here we are checking if the user has guessed a number which is higher than the generated number, then we are setting the "Status" textbox
                 ' to display that is "Too High", then we set the "userGuess" textbox to clear out so the user can guess again.
             ElseIf userGuess > generatedNumber Then
@@ -94,7 +97,7 @@
                 userCorrect = False
                 txtUserGuess.Text = ""
 
-            Else
+            Else : userGuess = generatedNumber
 
                 ' Here we are checking if the user has guessed a number which is the same (Equal Too) the generated number, then we are setting the "Status" textbox
                 ' to display that is "Correct" then we are setting a value of "userCorrect" to true so that the program stops checking.
@@ -106,6 +109,7 @@
 
                 txtUserGuess.ReadOnly = True
                 txtAnswer.Text = generatedNumber
+                cmdRun.Enabled = False
 
             End If
 
@@ -139,6 +143,8 @@
         cmdReset.Enabled = True
 
         txtAnswer.Text = generatedNumber
+
+        cmdGiveUp.Enabled = False
 
     End Sub
 
